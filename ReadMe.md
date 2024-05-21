@@ -17,7 +17,7 @@
   - Du code HTML & Javascript suffiront pour cette mission;
   - Sur ce Lien Github les images et les textes que contiendront le carroussel me sont fournits : "https://github.com/OpenClassrooms-Student-Center/Print-it-JS"
 
-### Téchnologies Utilisées :
+### Technologies Utilisées :
   - HTML;
   - CSS;
   - Javascript;
