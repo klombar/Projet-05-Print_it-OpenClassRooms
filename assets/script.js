@@ -22,13 +22,14 @@ const slides = [
 
 let img = document.querySelector(".banner-img");
 let title = document.querySelector("#banner p");
-
+let dot = document.querySelectorAll(".dots .dot");
 index = 0;
 
 
 
 let clickDroit = document.querySelector(".arrow_right");
 	clickDroit.addEventListener("click", () =>{
+
 		index++;
 		if (index > slides.length -1){
 			index = 0;
