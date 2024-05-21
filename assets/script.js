@@ -30,6 +30,9 @@ index = 0;
 let clickDroit = document.querySelector(".arrow_right");
 	clickDroit.addEventListener("click", () =>{
 		index++;
+		if (index > slides.length -1){
+			index = 0;
+		}
 		img.src = slides[index].image;
 		title.innerHTML = slides[index].tagLine;
 	})
