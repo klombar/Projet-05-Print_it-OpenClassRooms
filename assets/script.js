@@ -44,10 +44,12 @@ let clickDroit = document.querySelector(".arrow_right");
 
 let clickGauche = document.querySelector(".arrow_left");
 	clickGauche.addEventListener("click", () =>{
+		dot[index].classList.remove("dot_selected");
 		index--;
 		if (index < 0) {
 			index = 3
 		}
+		dot[index].classList.add("dot_selected");
 		img.src = slides[index].image;
 		title.innerHTML = slides[index].tagLine;
 })
