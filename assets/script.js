@@ -29,11 +29,12 @@ index = 0;
 
 let clickDroit = document.querySelector(".arrow_right");
 	clickDroit.addEventListener("click", () =>{
-
+		dot[index].classList.remove("dot_selected");
 		index++;
 		if (index > slides.length -1){
 			index = 0;
-		}
+		};
+		dot[index].classList.add("dot_selected");
 		img.src = slides[index].image;
 		title.innerHTML = slides[index].tagLine;
 	})
