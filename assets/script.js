@@ -21,6 +21,8 @@ const slides = [
 
 
 let img = document.querySelector(".banner-img");
+let title = document.querySelector("#banner p");
+
 index = 0;
 
 
@@ -29,6 +31,7 @@ let clickDroit = document.querySelector(".arrow_right");
 	clickDroit.addEventListener("click", () =>{
 		index++;
 		img.src = slides[index].image;
+
 	})
 
 
