@@ -31,7 +31,7 @@ let clickDroit = document.querySelector(".arrow_right");
 	clickDroit.addEventListener("click", () =>{
 		index++;
 		img.src = slides[index].image;
-
+		title.innerHTML = slides[index].tagLine;
 	})
 
 
@@ -41,5 +41,6 @@ let clickGauche = document.querySelector(".arrow_left");
 	clickGauche.addEventListener("click", () =>{
 		index--;
 		img.src = slides[index].image;
+		title.innerHTML = slides[index].tagLine;
 })
 
