@@ -43,6 +43,9 @@ let clickDroit = document.querySelector(".arrow_right");
 let clickGauche = document.querySelector(".arrow_left");
 	clickGauche.addEventListener("click", () =>{
 		index--;
+		if (index < 0) {
+			index = 3
+		}
 		img.src = slides[index].image;
 		title.innerHTML = slides[index].tagLine;
 })
