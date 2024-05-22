@@ -20,37 +20,36 @@ const slides = [
 
 
 
-let img = document.querySelector(".banner-img");
-let title = document.querySelector("#banner p");
-let dot = document.querySelectorAll(".dots .dot");
-index = 0;
+let bannerImage = document.querySelector(".banner-img");
+let bannerTitle = document.querySelector("#banner p");
+let dots = document.querySelectorAll(".dots .dot");
+currentIndex = 0;
 
 
 
-let clickDroit = document.querySelector(".arrow_right");
-	clickDroit.addEventListener("click", () =>{
-		dot[index].classList.remove("dot_selected");
-		index++;
-		if (index > slides.length -1){
-			index = 0;
+let arrowRight = document.querySelector(".arrow_right");
+	arrowRight.addEventListener("click", () =>{
+		dots[currentIndex].classList.remove("dot_selected");
+		currentIndex++;
+		if (currentIndex > slides.length -1){
+			currentIndex = 0;
 		};
-		dot[index].classList.add("dot_selected");
-		img.src = slides[index].image;
-		title.innerHTML = slides[index].tagLine;
+		dots[currentIndex].classList.add("dot_selected");
+		bannerImage.src = slides[currentIndex].image;
+		bannerTitle.innerHTML = slides[currentIndex].tagLine;
 	})
 
 
 
-
-let clickGauche = document.querySelector(".arrow_left");
-	clickGauche.addEventListener("click", () =>{
-		dot[index].classList.remove("dot_selected");
-		index--;
-		if (index < 0) {
-			index = 3
-		}
-		dot[index].classList.add("dot_selected");
-		img.src = slides[index].image;
-		title.innerHTML = slides[index].tagLine;
+let arrowLeft = document.querySelector(".arrow_left");
+	arrowLeft.addEventListener("click", () =>{
+		dots[currentIndex].classList.remove("dot_selected");
+		currentIndex--;
+		if (currentIndex < 0) {
+			currentIndex = 3
+		};
+		dots[currentIndex].classList.add("dot_selected");
+		bannerImage.src = slides[currentIndex].image;
+		bannerTitle.innerHTML = slides[currentIndex].tagLine;
 })
 
