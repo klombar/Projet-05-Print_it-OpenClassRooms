@@ -1,8 +1,8 @@
+# Projet Print it - Développement d'un carrousel interactif pour un site d'imprimerie
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f48ab1e4-beb2-40cb-bf48-ecba1fa117b9" alt="Bannière du projet" width="100%" />
 </p>
-
-# Projet Print it - Développement d'un carrousel interactif pour un site d'imprimerie
 
 ## Contexte
 
